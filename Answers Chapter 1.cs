@@ -15,14 +15,16 @@ let rec h (x,y) : float =
 
 let rec sum = function
     | 0 -> 0
-    | n -> n + sum (n-1);;
+    | n -> n + sum (n-1)
+;;
 
 //ex 1.5
 
 let rec fibo = function
     | 0 -> 0
     | 1 -> 1
-    | n -> fibo (n-1) + fibo (n-2);;
+    | n -> fibo (n-1) + fibo (n-2)
+;;
 
 //ex 1.6
 
@@ -30,6 +32,7 @@ let rec sum = function
     | (m,0) -> m
     | (0,n) -> 0
     | (m,n) -> m + (n+sum(m,n-1))
+;;
 
 //ex 1.7
 
@@ -37,6 +40,7 @@ float * int -> float
 int -> int
 function (float * int) -> float
 float * int -> float
+;;
 
 //ex 1.8
 
